@@ -81,7 +81,7 @@ body {
   border-radius: 10px;
   margin: 10px 20px;
 }
-.cart-container h2 {
+.cart-container h1 {
   text-align: center;
 }
 .cart-container h3 {
@@ -122,6 +122,93 @@ body {
   cursor: pointer;
 }
 
+.total-Price {
+  display: grid;
+  grid-template-columns: 3fr 3fr 2fr;
+  text-align: center;
+  margin: 10px;
+}
+.total_btn {
+  margin: 10px 0;
+  text-align: end;
+}
+
+.Buy {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Buy-bg {
+  background: rgba(0, 0, 0, 0.555);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.Buy-content {
+  position: relative;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 30px;
+  width: 500px;
+  height: 300px;
+}
+.Buy-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.Buy-confirm {
+  text-align: center;
+  
+}
+.Buy-confirm button{
+  margin: 0;
+  height: 50px;
+  justify-self: center;
+  font-size: 15px;
+  font-weight: bold;
+  color: #181715;
+  border: 2px solid rgb(102, 179, 209);
+  border-radius: 10px;
+  background-color:#45aaf2;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+.Buy-confirm button:hover {
+  border: 2px solid white;
+  background-color: #3867d6; /* Green */
+  color: white;
+}
+
+.total-Price button {
+  margin: 0;
+  height: 50px;
+  justify-self: center;
+  font-size: 15px;
+  font-weight: bold;
+  color: #181715;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: #4d98ee;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+.total-Price button:hover {
+  border: 2px solid white;
+  background-color: #8eadfd8a; /* Green */
+  color: white;
+}
+.totaltext {
+  text-align: end;
+}
 .img-overlay {
   position: absolute;
   top: 0;

@@ -34,8 +34,8 @@ function Movie({ movie, price, setPrice, Addmovie }) {
   return (
     <div className="movie-list" key={movie.id}>
       <img src={IMG_API + movie.poster_path} alt="" />
-      <div class="img-overlay img-overlay-blur">
-        <div class="img-title">
+      <div className="img-overlay img-overlay-blur">
+        <div className="img-title">
           <p>{movie.overview}</p>{" "}
         </div>
       </div>
@@ -51,7 +51,7 @@ function Movie({ movie, price, setPrice, Addmovie }) {
       <div className="price">{newPrice}</div>
 
       <div className="Price_addToCart">
-        <button onClick={() => setEditPrice(!editPrice)}>XXEdit PriceXX</button>
+        <button onClick={() => setEditPrice(!editPrice)}>Edit Price</button>
 
         <button onClick={() => Addmovie(movie)}>Add To Cart</button>
       </div>
