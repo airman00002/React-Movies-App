@@ -2,7 +2,7 @@
 # React-Movies-App
 
 #### ตัวอย่าง
-https://practical-fermat-fc970a.netlify.app
+https://hardcore-leavitt-113470.netlify.app
 ## ขั้นตอนการติดตั้ง
 
 #### > git clone https://github.com/airman00002/React-Movies-App.git
