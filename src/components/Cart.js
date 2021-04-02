@@ -48,9 +48,9 @@ function Cart({ cartItems, setCartItems, Addmovie, RemoveMovie, price }) {
   //*ผลรวมจำนวน
   const total_qty = cartItems.reduce((sum, item) => sum + item.qty, 0);
   let Total_Discount = 0;
-  if (total_qty >= 3 && total_qty < 5) {
+  if (total_qty >= 4 && total_qty < 6) {
     Total_Discount = totalPrice - (totalPrice * 10) / 100;
-  } else if (total_qty >= 5) {
+  } else if (total_qty >= 6) {
     Total_Discount = totalPrice - (totalPrice * 20) / 100;
   } else {
     Total_Discount = totalPrice;
@@ -66,10 +66,10 @@ function Cart({ cartItems, setCartItems, Addmovie, RemoveMovie, price }) {
         <h2 className="totaltext">Total Price : </h2>
         <h2>
           {Total_Discount} บาท
-          {total_qty >= 3 && total_qty < 5 && (
+          {total_qty >= 4 && total_qty < 6 && (
             <span style={{ fontSize: 15, color: "red" }}> ลด 10 %</span>
           )}
-          {total_qty >= 5 && (
+          {total_qty >= 6 && (
             <span style={{ fontSize: 15, color: "red" }}> ลด 20 %</span>
           )}
         </h2>
