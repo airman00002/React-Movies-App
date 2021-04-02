@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const IMG_API = "https://image.tmdb.org/t/p/w500";
-function Movie({ movie,price,setPrice}) {
+function Movie({ movie, price, setPrice, Addmovie }) {
   const [editPrice, setEditPrice] = useState(false);
 
   let newPrice = null;
@@ -12,7 +12,7 @@ function Movie({ movie,price,setPrice}) {
     //   setEditPrice(false);
     // };
     newPrice = (
-      <form >
+      <form>
         <input
           type="text"
           value={`${price} ไม่ทันครับ XXXXX`}
@@ -53,7 +53,7 @@ function Movie({ movie,price,setPrice}) {
       <div className="Price_addToCart">
         <button onClick={() => setEditPrice(!editPrice)}>XXEdit PriceXX</button>
 
-        <button>Add To Cart</button>
+        <button onClick={() => Addmovie(movie)}>Add To Cart</button>
       </div>
     </div>
   );

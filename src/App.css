@@ -64,6 +64,7 @@ body {
 
 .search {
   text-align: center;
+  flex-grow: 9;
 }
 .search-input {
   width: 80%;
@@ -73,6 +74,52 @@ body {
   border-radius: 10px;
   cursor: pointer;
   outline: none;
+}
+
+.cart-container {
+  background-color: rgba(255, 255, 255, 0.527);
+  border-radius: 10px;
+  margin: 10px 20px;
+}
+.cart-container h2 {
+  text-align: center;
+}
+.cart-container h3 {
+  text-align: center;
+  color: rgb(240, 74, 74);
+}
+
+.cartElements {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  margin: 10px;
+}
+
+.btnAdd-Remove button {
+  font-size: 30px;
+  margin: 0 5px;
+  color: #0f78f1;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: #cfecdba9;
+  cursor: pointer;
+}
+.flex-clear {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.item1 {
+  flex-grow: 10;
+}
+.item2 button {
+  font-size: 20px;
+  margin: 0 5px;
+  color: #f14f0f;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: #cfecdba9;
+  cursor: pointer;
 }
 
 .img-overlay {
@@ -112,20 +159,10 @@ body {
   text-align: center;
   padding: 10px;
 }
-/* .price input {
-  text-align: center;
-  width: 40%;
-  font-size: 20px;
-  padding: 5px;
-  border: 1px solid gray;
-  border-radius: 10px;
-  cursor: pointer;
-  outline: none;
-} */
 
 .Price_addToCart {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   text-align: center;
 }
 .Price_addToCart button {
